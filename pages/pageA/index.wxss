@@ -1,0 +1,20 @@
+/* pages/pageA/index.wxss */
+
+.movie{
+  margin-top: 40rpx;
+  text-align: center;
+  height: 60rpx;
+  background: rgb(200, 200, 200);
+}
+
+.paly{
+  margin-top: 20rpx;
+  text-align: center;
+  height: 60rpx;
+  background: rgb(0, 200, 0);
+}
+
+.request{
+  margin-top: 100rpx;
+  text-align: center;
+}

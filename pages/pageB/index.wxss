@@ -1,0 +1,26 @@
+/* pages/pageA/index.wxss */
+
+.movie{
+  margin-top: 40rpx;
+  text-align: center;
+  height: 200rpx;
+  background: rgb(200, 200, 200);
+}
+
+.paly{
+  margin-top: 20rpx;
+  text-align: center;
+  height: 60rpx;
+  background: rgb(0, 200, 0);
+}
+
+.language{
+  margin-top: 300rpx;
+  display: flex;
+}
+.language view{
+  flex: 1;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+}

@@ -1,0 +1,12 @@
+<!--pages/pageA/index.wxml-->
+<view class='title'>
+  
+  <view class='movie'>
+    {{language.movie}} : {{language.movie_name}}
+  </view>
+  <view class='paly' bindtap='playAction'>
+    {{movie_status? language.movie_replay:language.movie_play}}
+  </view>
+  
+  <view class='request' bindtap='fetchData'>数据请求</view>
+</view>

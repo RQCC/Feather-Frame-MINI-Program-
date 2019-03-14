@@ -1,0 +1,21 @@
+<!--pages/pageA/index.wxml-->
+<view class='title'>
+  <!-- 电影名称显示 -->
+  <view class='movie'>
+    {{language.movie}} : {{movie_name}}
+  </view>
+  <!-- 电影播放按钮 -->
+  <view class='paly' bindtap='palyMovie'>
+    {{movie_status?language.movie_over:language.movie_play}}
+  </view>
+
+  <!-- 修改语言 -->
+  <view class='language'>
+    <view bindtap='lanChane' data-code='1'> 
+      {{lan_code==1?'-':''}} 中文</view>
+    <view bindtap='lanChane' data-code='2'>
+      {{lan_code==2?'-':''}}英文</view>
+    <view bindtap='lanChane' data-code='3'>
+      {{lan_code==3?'-':''}}日文</view>
+  </view>
+</view>
