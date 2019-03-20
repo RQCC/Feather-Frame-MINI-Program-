@@ -1,5 +1,5 @@
-
 ** Feather-Frame-MINI-Program
+微信小程序的常用功能封装：广播通知、数据请求、国际化文件等
 
 ## 一.广播（通知）模块 (assets/notification/notificationCenter.js)
 
@@ -47,4 +47,32 @@
     //发布广播：
     NC.post(this, NC.MOVIE_PLAY,{movie_name:'your name'});
 
+## 二.数据请求模块 (assets/service/*)
+
+### 方法/Method
+ 
+  注册API名称
+
+      在api.js中注册你的api接口，便于管理接口，你也可以不使用
+      
+
+ POST请求：
+ 
+      post(api, param, loadingStyle = 1, autoAlertError)
+      
+ POST 无参数请求：
+ 
+      post(api, loadingStyle = 1, autoAlertError)
+      
+ GET请求
+ 
+      get(api, param, loadingStyle = 1, autoAlertError)
+      
+ GET 无参数请求：
+ 
+      get(api, loadingStyle = 1, autoAlertError)
+      
+ 返回值：
+ 
+      promise对象
 
