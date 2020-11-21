@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "food-li":"../../components/food/food",
+    "toy-li":"../../components/toy/toy",
+    "friut-li":"../../components/food/friut"
+  }
+}

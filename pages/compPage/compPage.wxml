@@ -1,0 +1,19 @@
+<!--pages/compPage/compPage.wxml-->
+
+<view>
+  This is my goods list:
+</view>
+
+<view wx:for="{{dataList}}" wx:key="unique">
+  <food-li bind:foodBy="onFoodBy" wx:if="{{item.type == 1}}" title="{{item.name}}" />
+  <toy-li bindtoyBy="toyBuy" wx:else title="{{item.name}}" />
+</view>
+
+<friut>
+  <view slot="water">
+    海带
+  </view>
+  <view slot="wrong">
+    土豆
+  </view>
+</friut>

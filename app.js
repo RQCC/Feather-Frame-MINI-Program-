@@ -1,5 +1,9 @@
 //app.js
+console.log("App");
+const CCPage = require("./assets/class/CCPage.js");
 App({
+  CCPage,
+  aa:'999',
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []

@@ -1,0 +1,9 @@
+/* components/food/friut.wxss */
+
+.water {
+  color: blue;
+}
+
+.wrong {
+  color: goldenrod;
+}

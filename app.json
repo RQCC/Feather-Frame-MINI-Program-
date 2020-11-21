@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/pageA/index",
     "pages/index/index",
+    "pages/compPage/compPage",
+    "pages/pageA/index",
+    "pages/pullhide/index",
     "pages/logs/logs",
     "pages/pageB/index"
   ],
@@ -10,5 +12,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

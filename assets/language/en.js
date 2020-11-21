@@ -6,6 +6,4 @@ const EN = {
   movie_replay: "Reshow",
 }
 
-
-
 module.exports = EN;

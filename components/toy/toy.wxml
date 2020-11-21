@@ -1,0 +1,8 @@
+<!--components/food/food.wxml-->
+<view class="toy">
+   <view class="toy-content">
+   <text>{{title}}</text>
+   <text class="buy-button">Buy Now</text>
+   <text>TOY</text>
+   </view>
+</view>

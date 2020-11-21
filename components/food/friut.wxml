@@ -1,0 +1,8 @@
+<!--components/food/friut.wxml-->
+
+<view class="water">
+  <slot name="water"></slot>
+</view>
+<view class="wrong">
+  <slot name="wrong"></slot>
+</view>

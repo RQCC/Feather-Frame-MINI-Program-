@@ -32,19 +32,19 @@ Page(
      * 页面的初始数据
      */
     data: {
-        movie_status:0,
+      movie_status: 0,
     },
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad: function (options) {
+    onLoad: function(options) {
       // 放入测试token
       this.commonData.user_token = "1234qwer";
       // 添加影片观看完成的监听
-      NC.addObserver(this,this.moviePlay,NC.MOVIE_PLAY);
+      NC.addObserver(this, this.moviePlay, NC.MOVIE_PLAY);
     },
     // 广播监听函数
-    moviePlay(info){
+    moviePlay(info) {
       console.warn("广播的信息：");
       console.warn(info);
 
@@ -56,27 +56,50 @@ Page(
       // NC.removeObserver(this, NC.MOVIE_PLAY);
     },
     //点击播放按钮
-    playAction(){
-      this.router.push('../pageB/index',
-      {movie_name:this.language.movie_name} );
+    playAction() {
+      this.router.push('../pageB/index', {
+        movie_name: this.language.movie_name
+      });
     },
     // 获取用户数据
-    fetchData(){
+    fetchData() {
       // 你可在 server.js 中配置自动添加token功能
       // 减少参数的书写
-      this.fetcher.post(this.api.user_info,{token:this.commonData.user_token})
-      .then(res=>{
-        console.log(res);
-        if (res.status == 200){
-          //do something
-        }else{
-          //do something
-        }
-      }); 
+      this.fetcher.post(this.api.user_info, {
+          token: this.commonData.user_token
+        })
+        .then(res => {
+          console.log(res);
+          if (res.status == 200) {
+            //do something
+          } else {
+            //do something
+          }
+        });
     },
     // 监听语言改变：
-    languageChanged:function(){
+    languageChanged: function() {
       console.warn("此函数：languageChanged 在语言改变时被调用");
     }
   })
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

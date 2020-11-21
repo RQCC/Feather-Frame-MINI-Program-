@@ -1,0 +1,32 @@
+<view>
+
+  <view id='top' animation="{{topAnimation}}">
+
+    <view class='top_hide_1'>
+    
+    </view>
+    
+  </view>
+
+  <view id='menu' class='top_hide_2'>
+  
+  </view>
+
+  <scroll-view id='scroll'
+  style="height:{{scrollCloseHeight}}px;"
+    scroll-y='true' 
+    upper-threshold="0"
+    lower-threshold="{{hidePosition}}"
+    bindscrolltoupper="bindScrollToUpper" 
+    bindscrolltolower="bindScrollToLower"
+    animation="{{scrollViewAnimation}}">
+    <block wx:for="{{test_arr}}" wx:key="{{index}}">
+      <view class='show_body'>
+        <view>{{item}}</view>
+      </view>
+    </block>
+    
+  </scroll-view>
+  
+
+</view>

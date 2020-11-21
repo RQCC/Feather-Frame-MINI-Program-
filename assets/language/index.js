@@ -1,27 +1,19 @@
 /*
   国际化文件（默认为中文）
   通过 languageCode 可以修改当前显示的语言
-  配合 baseClass 可以轻易同步修改所有界面显示
 */ 
 
+const CN = require('cn.js');
+const EN = require('en.js');
+const JP = require('jp.js');
 const CODE_KEY = "goal_language_code";
 
 const LanguageManager = {
-
   //获取语言
   get language (){
-    var lan = '';
-    if (this.languageCode == 1) {
-      lan = require('cn.js');
-    } else if (this.languageCode == 2) {
-      lan = require('./en.js');
-    } else if (this.languageCode == 3) {
-      lan = require('./jp.js');
-    }
-    return lan;
+    return [CN, EN, JP][this.languageCode-1];
   },
-
-  // 设置语言code
+  // 设置语言code 1:中文 2:英文 3:日文
   set languageCode(code) {
     code = parseInt(code);
     wx.setStorageSync(CODE_KEY, code);
@@ -29,11 +21,10 @@ const LanguageManager = {
       this.onChange(this.languageCode);
     }
   },
-
-  // 获取语言code
+  // 获取语言code 如果没有设置默认为1
   get languageCode(){
     return wx.getStorageSync(CODE_KEY) ? wx.getStorageSync(CODE_KEY) : 1;
-  },
+  }
 };
 
 module.exports = LanguageManager;

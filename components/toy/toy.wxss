@@ -1,0 +1,27 @@
+/* components/food/food.wxss */
+
+.toy{
+  padding: 10rpx;
+  background: #ececec;
+  margin-top: 4rpx;
+}
+
+.toy-content{
+  display: flex;
+  justify-content: space-between;
+}
+.toy-content text:last-child{
+  color: #fff;
+  font-weight: bold;
+  background: pink;
+  display: inline-block;
+  padding: 0 8rpx;
+}
+
+.buy-button{
+  display: inline-block;
+  background: green;
+  border-radius: 4px;
+  padding: 0 4px;
+  color: white;
+}

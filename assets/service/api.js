@@ -5,15 +5,13 @@
   示例：pageA和pageB中查看
 */
 
-// 本地开发环境
-const local = "http://local.miniprogram.cn/api/";
-// 线上测试接口
-const test = "http://test.miniprogram.cn/api/";
-// 正式发布接口
-const release = "http://miniprogram.cn/api/";
+const local = "http://local.miniprogram.cn/api/";// 本地开发环境
+const test = "http://test.miniprogram.cn/api/";// 线上测试接口
+const release = "http://miniprogram.cn/api/";// 正式发布接口
 
-/// 最终使用的接口
-const HOST = test;
+// 0:正式接口  1:测试接口 3:本地接口
+const ENC = 0;
+const HOST = [release,test,local][ENC];
 
 let api = {
   // 获取图片链接

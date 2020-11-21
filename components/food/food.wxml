@@ -1,0 +1,8 @@
+<!--components/food/food.wxml-->
+<view class="food">
+   <view class="food-content">
+   <text>{{title}}</text>
+   <text bindtap="foodBy" class="buy-button">Buy Now</text>
+   <text>FOOD</text>
+   </view>
+</view>
